@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+.Contenedor_Todo
+{
+
+  background-color:aquamarine;
+  color: white;
+border-radius: 10px;
+  margin: 10% 35%;
+}
+video
+{
+  position: fixed;
+  left:0;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+}
+
+.Contenedor_Principal div
+{
+  margin: 30px 100px;
+  transition: all 1s;
+}
+.Contenedor_Principal button
+{
+margin-top: 25px;
+}
+.Boton_Iniciar
+{
+position: relative;
+left: 5px; /*70px*/
+}
+.Boton_Ingreso
+{
+position: relative;
+left: 10px; /*80px*/
+}
+.Contenedor_Principal div p
+{
+  text-align: center;
+}
+
+.Contenedor_Principal h1
+{
+  color: black;
+  margin: 30px 60px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  /*text-aling:center*/
+}
+.Logo
+{
+  margin-top: -70px;
+  margin-left: 30%; /*38%*/
+  margin-bottom: 5px;
+}
+.Logo
+{
+
+  width: 150px;
+  height: 150px;
+}
+
+.Contenedor_Principal div p{
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.Contenedor_Principal button
+{
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: 14px;
+  background: transparent; /*Opcional para el fondo del boton*/
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+  outline: none;
+  transition: all 1s;
+}
+
+.Contenedor_Principal button:hover{
+  background:purple;
+  color: white;
+}
+
+/*Estilización de Formularios*/
+
+.Contenedor_LoginyRegistro{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -250px;
+  left: 10px;
+  transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.Contenedor_LoginyRegistro form{
+  width: 100%;
+  padding: 80px 20px;
+  background: beige;
+  position: absolute;
+  border-radius: 20px;
+}
+
+.Contenedor_LoginyRegistro form h2{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.Contenedor_LoginyRegistro form input{
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: aquamarine;
+  font-size: 16px;
+  outline: none;
+}
+
+.Contenedor_LoginyRegistro form button
+{
+  padding: 10px 40px;
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: transparent;
+  transition: all 1s;
+}
+.Contenedor_LoginyRegistro form button:hover{
+  background:purple;
+  color: white;
+}
+.Formulario_Login  /*Con estas clase bloqueo las pantallas para su animacion*/
+{
+  position: absolute;  /*Ajustes Temporales = display: none;*/
+  left: 400px;
+}
+.Formulario_Registro
+{
+  position: absolute;  /*Ajustes Temporales = display: none;*/
+  left: -400px;
+}
+
+.Mesagge_Error
+{
+  color: red;
+  text-transform: uppercase;
+  opacity: 0;
+
+}

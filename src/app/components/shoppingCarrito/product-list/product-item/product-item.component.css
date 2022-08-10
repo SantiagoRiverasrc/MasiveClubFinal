@@ -1,0 +1,21 @@
+.btn_A_producto
+{
+  font-size:small;
+  background-color: aquamarine;
+  color: black;
+  border: none;
+  transition: all 1s;
+}
+.btn_A_producto:hover
+{
+ background-color: purple;
+ color: white;
+}
+.btn_B_producto
+{
+ background-color: antiquewhite;
+ color: black;
+ border: none;
+ transition: all 1s;
+}
+

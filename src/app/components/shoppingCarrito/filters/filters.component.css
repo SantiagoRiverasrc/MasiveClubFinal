@@ -1,0 +1,41 @@
+.Filtro
+{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 15px;
+  background-color: aquamarine;
+  color: black;
+  font-size: medium;
+  border-radius: 5px;
+}
+.form_A , .form_B
+{
+  margin-top: 10px;
+  padding: 5px;
+  background: beige;
+  font-size: 16px;
+}
+.strong
+{
+  text-align: center;
+  border-radius: 0px;
+}
+.btn_buscar
+{
+  text-transform: uppercase;
+  margin: 20px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  background-color: antiquewhite;
+  font-weight: 500;
+  cursor: pointer;
+  color: black;
+  outline: none;
+  transition: all 1s;
+}
+.btn_buscar:hover
+{
+  background:purple;
+  color: white;
+}

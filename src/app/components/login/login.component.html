@@ -1,0 +1,40 @@
+<video src="./assets/img/Vinilo - 38390.mp4" autoplay="true" loop="true"></video>
+<audio src="/assets/img/MasiveClub.mpeg" loop="true"></audio> <!--El control es temporal-->
+<main>
+    <div class="Contenedor_Todo">
+        <div class="Contenedor_Principal">
+            <img class="Logo" src="./assets/img/usuario.png" alt="">
+            <h1>Bienvenido</h1>
+            <div class="Contenedor_Principal_Login">
+                <p>Inicia sesión para ingresar</p>
+                <button type="button" class="Boton_Iniciar">Iniciar Sesión</button>
+            </div>
+            <div class="Contenedor_Principal_Registro">
+                <p>Registrarse</p>
+                <button type="button" (click)="Registro()" class="Boton_Ingreso"  id="Boton_Registrarse">Regístrarse</button>
+            </div>
+        </div>
+
+        <!--Formulario de Login y registro-->
+        <div class="Contenedor_LoginyRegistro">
+            <!--Login-->
+            <form (ngSubmit)="onLogin()" #Form="ngForm" class="Formulario_Login">
+                <h2>Iniciar Sesión</h2>
+                <input type="email" name='email' required #emailinput placeholder="Email" class="Email_Login" [(ngModel)]="Login.email">
+                <input type="password" name='password' #passwordinput="ngModel" required  placeholder="Password" class="password_Login" [(ngModel)]="Login.password">
+                <p class="Mesagge_Error"> Mensaje de error </p>
+                <button type="submit" [disabled]="Form.invalid" id="Boton_Ingresar">Ingresar</button>
+            </form>
+            <!--Registro-->
+            <form (ngSubmit)="onRegister()" #Form="ngForm" class="Formulario_Registro">
+                <h2>Regístrarse</h2>
+                <input type="text" name="nombre" required placeholder="Nombre" class="Nombre" [(ngModel)]="Register.nombre">
+                <input type="text" name="apellidos" required="" placeholder="Apellidos" class="Apellidos" [(ngModel)]="Register.apellido">
+                <input type="email" name="email" required="" placeholder="Email" class="Email" [(ngModel)]="Register.email">
+                <input type="password" name="password" required  placeholder="Password" class="Password" [(ngModel)]="Register.password">
+                <p class="Mesagge_Error"> Mensaje de error </p>
+                <button type="submit" [disabled]="Form.invalid" id="Boton_Registro">Regístrarse</button>
+            </form>
+        </div>
+    </div>
+</main>

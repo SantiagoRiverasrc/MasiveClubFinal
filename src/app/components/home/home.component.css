@@ -1,0 +1,8 @@
+.Fondo{
+  position: fixed;
+  left:0;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+}

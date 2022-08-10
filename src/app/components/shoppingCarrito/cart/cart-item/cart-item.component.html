@@ -1,0 +1,10 @@
+<div class="cart-item">
+  <span> {{cartItem.nombreProducto}}</span> 
+  <span> {{cartItem.precio | currency:'COP'}} </span>
+   <strong>
+    {{ (cartItem.cartTotal) | currency:'COP' }}</strong> <!--Aun no funciona-->
+    <br>
+   {{cartItem.precio}}
+   <!-- {{cartItem.cantidad}}--> 
+</div>
+
